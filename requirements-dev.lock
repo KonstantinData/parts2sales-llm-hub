@@ -15,6 +15,10 @@ annotated-types==0.7.0
 anyio==4.9.0
     # via starlette
 black==25.1.0
+brotli==1.1.0
+    # via fonttools
+cffi==1.17.1
+    # via weasyprint
 cfgv==3.4.0
     # via pre-commit
 click==8.1.8
@@ -24,6 +28,8 @@ click==8.1.8
 colorama==0.4.6
     # via click
     # via pytest
+cssselect2==0.8.0
+    # via weasyprint
 distlib==0.3.9
     # via virtualenv
 exceptiongroup==1.3.0
@@ -33,6 +39,8 @@ fastapi==0.115.12
     # via parts2sales-llm-hub
 filelock==3.18.0
     # via virtualenv
+fonttools==4.58.0
+    # via weasyprint
 h11==0.16.0
     # via uvicorn
 identify==2.6.12
@@ -61,18 +69,26 @@ packaging==25.0
     # via pytest
 pathspec==0.12.1
     # via black
+pillow==11.2.1
+    # via weasyprint
 platformdirs==4.3.8
     # via black
     # via virtualenv
 pluggy==1.6.0
     # via pytest
 pre-commit==4.2.0
+pycparser==2.22
+    # via cffi
 pydantic==2.11.5
     # via fastapi
 pydantic-core==2.33.2
     # via pydantic
+pydyf==0.11.0
+    # via weasyprint
 pygments==2.19.1
     # via rich
+pyphen==0.17.2
+    # via weasyprint
 pytest==8.3.5
     # via parts2sales-llm-hub
 pyyaml==6.0.2
@@ -87,6 +103,11 @@ sniffio==1.3.1
     # via anyio
 starlette==0.46.2
     # via fastapi
+tinycss2==1.4.0
+    # via cssselect2
+    # via weasyprint
+tinyhtml5==2.0.0
+    # via weasyprint
 tomli==2.2.1
     # via black
     # via mypy
@@ -112,3 +133,11 @@ uvicorn==0.34.2
     # via parts2sales-llm-hub
 virtualenv==20.31.2
     # via pre-commit
+weasyprint==65.1
+    # via parts2sales-llm-hub
+webencodings==0.5.1
+    # via cssselect2
+    # via tinycss2
+    # via tinyhtml5
+zopfli==0.2.3.post1
+    # via fonttools
