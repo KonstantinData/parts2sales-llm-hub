@@ -59,9 +59,10 @@ pluggy==1.6.0
     # via pytest
 pycparser==2.22
     # via cffi
-pydantic==2.11.5
+pydantic==2.7.4
     # via fastapi
-pydantic-core==2.33.2
+    # via parts2sales-llm-hub
+pydantic-core==2.18.4
     # via pydantic
 pydyf==0.11.0
     # via weasyprint
@@ -70,6 +71,8 @@ pygments==2.19.1
 pyphen==0.17.2
     # via weasyprint
 pytest==8.3.5
+    # via parts2sales-llm-hub
+python-multipart==0.0.20
     # via parts2sales-llm-hub
 rich==14.0.0
     # via typer
@@ -101,10 +104,7 @@ typing-extensions==4.13.2
     # via rich
     # via starlette
     # via typer
-    # via typing-inspection
     # via uvicorn
-typing-inspection==0.4.1
-    # via pydantic
 uvicorn==0.34.2
     # via parts2sales-llm-hub
 weasyprint==65.1

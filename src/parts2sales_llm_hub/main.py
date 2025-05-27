@@ -3,11 +3,6 @@ main.py — FastAPI WebUI for gpt-pipeline-hub evaluation pipeline
 -----------------------------------------------------------------
 Serves the UI, triggers background evaluation pipeline runs,
 displays summary results, and handles output downloads.
-
-Core Functions:
-- Trigger `eval_chain.py` + `token_cost_summary.py` in background
-- Serve evaluation summary and download links
-- Monitor pipeline status via `status.json`
 """
 
 from fastapi import FastAPI, Request, BackgroundTasks
@@ -19,16 +14,13 @@ import subprocess
 import json
 import logging
 
-# 🔁 Import upload routes
-from upload_routes import router as upload_router
-
-app.include_router(upload_router)
+from parts2sales_llm_hub.upload_routes import router as upload_router
 
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Path Setup
+# Path setup (project root: .../parts2sales-llm-hub)
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / "static"
 TEMPLATE_DIR = BASE_DIR / "templates"
@@ -37,14 +29,15 @@ SUMMARY_FILE = EVAL_DIR / "pipeline_summary.json"
 STATUS_FILE = EVAL_DIR / "status.json"
 COST_FILE = EVAL_DIR / "token_costs_summary.json"
 
-# App instance
+# FastAPI app instance
 app = FastAPI()
 
-# Mount static assets
+# Mount static files and templates
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
-
-# Templates config
 templates = Jinja2Templates(directory=TEMPLATE_DIR)
+
+# Register upload routes
+app.include_router(upload_router)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -87,7 +80,9 @@ def run_all():
             )
 
         write_status("Evaluating")
-        subprocess.run(["python", "eval_chain.py"], check=True)
+        subprocess.run(
+            ["python", "scripts/eval_runner.py", step], check=True, cwd=BASE_DIR
+        )
 
         write_status("Saving")
         subprocess.run(["python", "token_cost_summary.py"], check=True)
@@ -127,9 +122,6 @@ def download_latest_evaluation():
         headers={"Content-Disposition": f'attachment; filename="{latest_file.name}"'},
     )
 
-
-# Register upload file route
-app.include_router(upload_router)
 
 # Optional local run
 if __name__ == "__main__":

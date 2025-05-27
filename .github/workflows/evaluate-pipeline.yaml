@@ -1,0 +1,33 @@
+name: Evaluate Prompt Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  evaluate-prompts:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: ✨ Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙ Install Rye (non-interactive)
+        run: |
+          curl -sSf https://rye.astral.sh/get | bash -s -- --yes
+          echo "$HOME/.rye/shims" >> $GITHUB_PATH
+
+      - name: 🚀 Sync dependencies with Rye
+        run: |
+          export PATH="$HOME/.rye/shims:$PATH"
+          rye sync
+
+      - name: 🔍 Evaluate prompt quality from CLI
+        run: |
+          export PATH="$HOME/.rye/shims:$PATH"
+          rye run python -m prompt_quality.cli.validate_prompt_quality_cli --input-dir uploads/prompts --output-dir outputs/evals
+
+      - name: 📃 Upload evaluation results
+        uses: actions/upload-artifact@v4
+        with:
+          name: prompt-eval-results
+          path: outputs/evals

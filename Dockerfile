@@ -7,9 +7,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies required by WeasyPrint
+# Install system dependencies required by WeasyPrint and uv
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
     build-essential \
     libffi-dev \
     libpango-1.0-0 \
@@ -20,21 +19,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxslt1-dev \
     libjpeg-dev \
     zlib1g-dev \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Rye
-RUN curl -sSf https://rye.astral.sh/get | bash -s -- --yes
+# Install uv
+RUN pip install uv
 
-# Add Rye to PATH
-ENV PATH="/root/.rye/shims:${PATH}"
-
-# Copy project
+# Copy project files
 COPY . /app
 
-# Install dependencies
-RUN rye sync
+# Install Python dependencies using uv
+RUN uv pip install --no-cache --system -r requirements.lock
 
-# Expose port for AppRunner/FastAPI
+# Expose port for FastAPI
 EXPOSE 8080
 
 # Start FastAPI app
