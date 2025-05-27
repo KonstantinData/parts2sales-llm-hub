@@ -1,0 +1,151 @@
+Project Structure:
+
+├─ .github
+│  ├─ workflows
+│  │  ├─ .gitkeep
+├─ .ruff_cache
+│  ├─ 0.9.6
+│  ├─ .gitignore
+│  ├─ CACHEDIR.TAG
+├─ cli
+│  ├─ .gitkeep
+├─ core
+│  ├─ .gitkeep
+├─ data
+│  ├─ outputs
+│  ├─ raw
+│  │  ├─ companies_sample_data.csv
+│  │  ├─ large_stock_sample_data.xlsx
+│  │  ├─ smal_stock_sample_data.xlsx
+│  ├─ test
+│  │  ├─ 00-feature_determination
+│  │  │  ├─ feature_test_set.json
+│  │  ├─ 01-use_case_determination
+│  │  │  ├─ usecase_extraction_testing.sample.json
+│  │  │  ├─ usecase_extraction_wrapped.json
+│  │  ├─ 02-industry_classification
+│  │  │  ├─ industry_class.examples.from_usecase.json
+│  │  ├─ 03-company_assignment
+│  │  ├─ 04-contact_assignment
+│  ├─ .gitkeep
+├─ docs
+│  ├─ .gitkeep
+├─ evals
+│  ├─ .gitkeep
+├─ generators
+│  ├─ .gitkeep
+│  ├─ generate_sample_data.py
+│  ├─ pdf_generator.py
+│  ├─ prompt_selector.py
+├─ infra
+│  ├─ .gitkeep
+├─ outputs
+│  ├─ .gitkeep
+├─ pdf
+│  ├─ .gitkeep
+├─ prompt_quality
+│  ├─ cli
+│  │  ├─ render_and_validate_template.py
+│  │  ├─ validate_prompt_quality_cli.py
+│  ├─ languages
+│  │  ├─ lang_de.py
+│  │  ├─ lang_en.py
+│  ├─ validators
+│  │  ├─ validate_metadata_files.py
+│  │  ├─ validate_prompt_quality_de.py
+│  │  ├─ validate_prompt_quality_en.py
+│  ├─ __init__.py
+│  ├─ prompt_quality_README.md
+├─ prompts
+│  ├─ 00-templates
+│  │  ├─ company_assignment_template.yaml
+│  │  ├─ company_assignment_v1.yaml
+│  │  ├─ contact_assignment_template.yaml
+│  │  ├─ contact_assignment_v1.yaml
+│  │  ├─ feature_determination_template.yaml
+│  │  ├─ feature_determination_v1.yaml
+│  │  ├─ feature_determination_v2.yaml
+│  │  ├─ industry_classification_template.yaml
+│  │  ├─ industry_classification_v1.yaml
+│  │  ├─ README.00-templates.md
+│  │  ├─ README.md
+│  │  ├─ use_case_determination_template.yaml
+│  │  ├─ use_case_determination_v1.yaml
+│  ├─ 01-examples
+│  │  ├─ README.01-examples.md
+│  │  ├─ README.md
+│  ├─ 02-production
+│  │  ├─ company_assignment_latest.yaml
+│  │  ├─ company_assignment_v1.yaml
+│  │  ├─ contact_assignment_latest.yaml
+│  │  ├─ contact_assignment_v1.yaml
+│  │  ├─ feature_determination_latest.yaml
+│  │  ├─ feature_determination_v1.yaml
+│  │  ├─ feature_determination_v2.yaml
+│  │  ├─ industry_classification_latest.yaml
+│  │  ├─ industry_classification_v1.yaml
+│  │  ├─ README.02-production.md
+│  │  ├─ README.md
+│  │  ├─ use_case_determination_latest.yaml
+│  │  ├─ use_case_determination_v1.yaml
+│  ├─ 03-metadata
+│  │  ├─ metadata_company_assignment.yaml
+│  │  ├─ metadata_contact_assignment.yaml
+│  │  ├─ metadata_feature_determination.yaml
+│  │  ├─ metadata_industry_classification.yaml
+│  │  ├─ metadata_use_case_determination.yaml
+│  │  ├─ prompt_registry.yaml
+│  │  ├─ README.03-metadata.md
+│  │  ├─ README.md
+│  ├─ 04-evals
+│  │  ├─ README.04-evals.md
+│  │  ├─ README.md
+│  │  ├─ token_costs.json
+│  ├─ 98-drafts
+│  │  ├─ README.98-drafts.md
+│  │  ├─ README.md
+├─ s3
+│  ├─ .gitkeep
+├─ scripts
+│  ├─ eval_chain.py
+│  ├─ eval_runner.py
+│  ├─ README.md
+│  ├─ run_generate_sample_data.ps1
+│  ├─ token_cost_summary.py
+│  ├─ validate_all_prompts.py
+│  ├─ validate_output.py
+├─ src
+│  ├─ parts2sales_llm_hub
+│  ├─ parts2sales_llm_hub.egg-info
+│  │  ├─ dependency_links.txt
+│  │  ├─ PKG-INFO
+│  │  ├─ requires.txt
+│  │  ├─ SOURCES.txt
+│  │  ├─ top_level.txt
+├─ static
+│  ├─ style.css
+├─ templates
+│  ├─ index.html
+│  ├─ report.html
+├─ tests
+│  ├─ workflow
+│  │  ├─ .gitkeep
+│  ├─ .gitkeep
+├─ uploads
+│  ├─ .gitkeep
+├─ validators
+│  ├─ .gitkeep
+├─ .env
+├─ .gitignore
+├─ built_structure_workflow.ps1
+├─ built_structure.ps1
+├─ init_rye.ps1
+├─ LICENSE.txt
+├─ print_structure_ascii.ps1
+├─ print_structure.ps1
+├─ project_structure.txt
+├─ prompt_registry.yaml
+├─ pyproject.toml
+├─ README.md
+├─ requirements-dev.lock
+├─ requirements.lock

@@ -23,3 +23,10 @@ dev-dependencies = [
 [tool.setuptools]
 packages = ["parts2sales_llm_hub"]
 package-dir = {"" = "src"}
+
+[tool.rye.dependencies]
+pydantic = "==2.10.6"
+pydantic-core = "==2.27.2"
+notebook = ">=7.3.2"
+jupyterlab = ">=4.3.4,<4.4"
+
