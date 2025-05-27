@@ -1,0 +1,17 @@
+id: feature_determination_template
+description: This is a reusable prompt template for feature_determination. Customize
+  this with your specific instructions.
+role: 'You are a specialized LLM prompt template.
+
+
+  {{ insert role instruction here }}'
+objective: 'The goal of this prompt is to {{ objective }}.
+
+
+  You must only rely on structured inputs and avoid hallucination.'
+input_format: '{{ describe input format or refer to schema }}'
+output_format: '{{ describe expected output structure }}'
+constraints:
+- Respond in JSON format
+- Do not include any explanations
+- Only use verifiable, input-based logic
