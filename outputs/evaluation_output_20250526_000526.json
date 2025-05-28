@@ -1,0 +1,281 @@
+{
+  "feature_determination": [
+    {
+      "input": {
+        "part_number": "MSB6",
+        "title": "FESTO Service Unit Combination MSB6 (531030)",
+        "manufacturer": "FESTO"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here is a brief specification and description for the item you provided:\n\n---\n\n**Part Number:** MSB6  \n**Title:** FESTO Service Unit Combination MSB6 (531030)  \n**Manufacturer:** FESTO  \n\n---\n\n### Product Overview\n\nThe **FESTO MSB6 Service Unit Combination** (catalog no. 531030) is a modular air preparation system unit commonly used in pneumatic systems to ensure high air quality, pressure regulation, and protection of downstream components and equipment. This service unit combination typically includes a filter, regulator, and sometimes a lubricator or other accessories, all assembled in a single, compact module for ease of installation and maintenance.\n\n### Key Features\n\n- **Integrated Functions:** Typically includes a filter, regulator, and sometimes a lubricator within one unit.\n- **High Flow Rate:** Suitable for demanding industrial applications.\n- **Modularity:** Flexible combination options with other MS series components.\n- **Durable Construction:** Built to FESTO's high standards for reliability and longevity.\n- **Easy Maintenance:** Quick filter replacement and visible status indicators for pressure and condition.\n- **Space-saving design:** Compact, stackable units optimize use of panel or machine space.\n\n### Typical Applications\n\n- Industrial automation systems\n- Pneumatic control panels\n- Machine tools\n- Packaging machinery\n- General manufacturing\n\n### Technical Data (typical, confirm with FESTO datasheets):\n\n- **Port size:** (Varies\u2014often G1/2, G3/4, or G1, depending on the exact MSB6 configuration)\n- **Nominal flow rate:** Up to several thousand liters per minute\n- **Filtration rating:** (Often 40 \u00b5m, 5 \u00b5m, or finer depending on filter element)\n- **Regulation range:** 0.5\u201316 bar, depending on regulator type\n- **Medium:** Compressed air\n- **Operating temperature:** -10 to +60\u00b0C\n\n### Documentation & Datasheet\n\nFor exact technical specifications and configuration options, please refer to the official **[FESTO MSB6 Datasheet (531030)](https://www.festo.com)** or consult your FESTO distributor, as the MSB6 is a modular series and may be supplied in several configurations.\n\n---\n\nIf you need CAD models, wiring diagrams, or have specific questions about compatibility or options (such as filter grade, bowl type, pressure gauge placement, etc.), please provide more details or let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "483ESO-327678",
+        "title": "Lenze Voltage Regulator 483ESO / 327678 3x390V",
+        "manufacturer": "LENZE"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a structured product description for your Lenze voltage regulator:\n\n---\n\n### Product: **Lenze Voltage Regulator 483ESO / 327678**\n\n**Part Number:** 483ESO-327678  \n**Manufacturer:** LENZE  \n**Model:** 483ESO / 327678  \n**Voltage:** 3x390V  \n\n**Description:**  \nThe **Lenze 483ESO / 327678 Voltage Regulator** is designed for precise voltage regulation in industrial three-phase power systems. Supporting a nominal voltage of 3x390V, this regulator helps maintain stable output, protecting sensitive equipment and ensuring efficient performance. Manufactured by LENZE\u2014a well-known brand for industrial automation solutions\u2014this unit is ideal for use in automation panels, control cabinets, and a variety of electrical systems requiring consistent voltage control.\n\n**Key Features:**\n- Reliable three-phase voltage regulation\n- Compatible with 390V systems\n- Robust LENZE construction for industrial environments\n- Suitable for integration into automation and control systems\n- Ensures equipment protection and optimal operational stability\n\n**Typical Applications:**\n- Industrial automation systems\n- Motor control centers\n- Power distribution panels\n- Factory machinery and equipment\n\n---\n\nIf you need more detailed technical data, usage instructions, or have specific application questions, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "750-425",
+        "title": "1X Wago 750-425 2DI NAMUR  -  I/O System",
+        "manufacturer": "WAGO"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here's a brief overview of the product you referenced:\n\n**Product:** Wago 750-425 2DI NAMUR I/O Module  \n**Manufacturer:** WAGO  \n**Part Number:** 750-425  \n**Description:**  \nThe Wago 750-425 is a digital input module designed for the WAGO I/O system. It provides 2 digital inputs compatible with NAMUR sensors, typically used for safely detecting signals from hazardous areas in industrial automation environments.\n\n**Main features:**\n- **Channels:** 2 digital inputs\n- **Input type:** NAMUR (suitable for intrinsically safe digital sensors)\n- **Compatibility:** Part of the modular WAGO 750 Series I/O system\n- **Application:** Often used in process automation, for status or fault monitoring in plants\n\nIf you need **datasheets, wiring diagrams, or application notes**, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "6SL3203-0BE32-5AA0",
+        "title": "SIEMENS 6SL3203-0BE32-5AA0  -  Sinamics Line Filter",
+        "manufacturer": "SIEMENS"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Sure! Here\u2019s some detailed information about the **SIEMENS 6SL3203-0BE32-5AA0 - Sinamics Line Filter**:\n\n---\n\n### Product Overview\n\n- **Part Number:** 6SL3203-0BE32-5AA0\n- **Title:** Sinamics Line Filter\n- **Manufacturer:** SIEMENS\n\n---\n\n### Description\n\nThe **6SL3203-0BE32-5AA0** is an EMC (Electro-Magnetic Compatibility) line filter designed for use with SINAMICS drives. Its primary purpose is to reduce electromagnetic interference (EMI) conducted emissions from the drive system, ensuring compliance with various standards and regulatory requirements.\n\n---\n\n### Technical Specifications\n\n| Parameter            | Value                                    |\n|----------------------|------------------------------------------|\n| **Function**         | EMC Line Filter for Sinamics Drives      |\n| **Voltage**          | 3-phase, 380V\u2026480V AC                    |\n| **Current**          | 25 A                                     |\n| **Mounting**         | Panel mounting                           |\n| **Usage**            | For use with SINAMICS G120, S120 series* |\n| **Approval**         | UL, CE                                   |\n| **Operating Temp**   | -25\u00b0C to +55\u00b0C                           |\n\n\\* **Check the compatibility for your drive family and frame size.**\n\n---\n\n### Typical Applications\n\n- Industrial drive and automation systems  \n- Motor control centers  \n- Environments where suppression of conducted EMI is required to meet EMC requirements\n\n---\n\n### Useful Links\n\n- [SIEMENS Industry Mall (Product Page)](https://mall.industry.siemens.com/)\n- [Download Manual/Documentation (search for 6SL3203-0BE32-5AA0)](https://support.industry.siemens.com/cs/document/)\n\n---\n\n### Notes\n\n- Always check the **drive\u2019s manual** for compatibility and installation instructions.\n- Proper grounding is essential for effective EMC suppression.\n- Installation must follow local regulations for safety and EMC compliance.\n\n---\n\nIf you need **datasheets**, **dimensions**, or **wiring diagrams**, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "RUC130-M30-LIAP8X-H1151",
+        "title": "Turck RUC130-M30-LIAP8X-H1151  -  Ultrasonic Sensor",
+        "manufacturer": "TURCK"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here are the details for the part you've mentioned:\n\n---\n\n**Part Number:** RUC130-M30-LIAP8X-H1151  \n**Title:** Turck RUC130-M30-LIAP8X-H1151 \u2013 Ultrasonic Sensor  \n**Manufacturer:** TURCK\n\n---\n\n### **Product Overview**\nThe **TURCK RUC130-M30-LIAP8X-H1151** is an ultrasonic sensor designed for precise distance measurement and object detection, often used in industrial automation applications.\n\n#### **Key Specifications (Typical for this Family)**\n- **Sensing Principle:** Ultrasonic\n- **Nominal Sensing Range:** Typically varies (please confirm based on datasheet, for M30 units often up to 2m or more)\n- **Design:** M30 Cylindrical Threaded Body\n- **Output:** Usually Analog (0-10 V or 4-20 mA) and/or Digital, PNP/NPN switching (Please confirm for this exact model)\n- **Connection:** Often 8-pin connection (per \"P8\" in model name)\n- **Electrical Supply:** 10-30 VDC typical for these types of sensors\n\n#### **Features**\n- **Non-contact measurement:** Reliable detection of transparent, shiny, or irregularly shaped objects.\n- **Teach-in function:** Simple setup and configuration.\n- **Robust Housing:** Typically IP67-rated for demanding environments.\n- **Excellent for:** Level detection, double sheet detection, presence/absence detection, etc.\n\n---\n\n### **Useful Resources**\n- [Turck RUC Ultrasonic Sensor Family Page](https://www.turck.us/en/ultrasonic-sensors-118.php)\n- [Turck Product Finder](https://www.turck.com/products)\n- **Datasheet:** For exact parameters and wiring diagram, [search for the datasheet](https://www.turck.us/en/product/RUC130-M30-LIAP8X-H1151) specific to this part number.\n\n---\n\n**If you need the exact datasheet, wiring diagram, or information about mounting and configuration, let me know!**"
+      }
+    },
+    {
+      "input": {
+        "part_number": "140ACO02000C",
+        "title": "Schneider Electric Analogue Output Module 140ACO02000C",
+        "manufacturer": "SCHNEIDER ELECTRIC"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s some detailed information about the **Schneider Electric 140ACO02000C Analogue Output Module**:\n\n---\n\n### Product Overview:\n- **Part Number:** 140ACO02000C\n- **Title:** Schneider Electric Analogue Output Module 140ACO02000C\n- **Manufacturer:** SCHNEIDER ELECTRIC\n\n---\n\n### Key Features:\n\n- **Series:** Modicon Quantum\n- **Type:** Analogue Output Module\n- **Channels:** 2 Output Channels\n- **Output Type:** Current\n- **Output Range:** 4-20 mA\n- **Resolution:** 11 bits + Sign\n- **Isolation:** Yes, between channels and the system\n- **Mounting:** Rack Mount (Quantum Backplane)\n- **Diagnostic:** Channel diagnostics available (Open circuit, short circuit detection)\n\n---\n\n### Applications:\n\n- Process control\n- Industrial automation\n- Manufacturing plants\n\n---\n\n### Compatibility:\n\nThis module is suited for use with Schneider Electric's Modicon Quantum PLC systems.\n\n---\n\n### Documentation & Links:\n\nYou can find detailed user manuals and datasheets on the [Schneider Electric official website](https://www.se.com/ww/en/product/140ACO02000C/analog-output-module-2-channels/).\n\n---\n\n### Example Application:\n\n**Used when you need to output analog current signals (such as controlling actuators, drives, or analog indicators) from your PLC system.**\n\n---\n\nIf you need technical documentation, data sheet, wiring diagram, or replacement suggestions, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "6SL3210-1PE22-7AL0",
+        "title": "SIEMENS 6SL3210-1PE22-7AL0  -  Frequency Inverter",
+        "manufacturer": "SIEMENS"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s the detailed product information for the part you provided:\n\n---\n\n**Part Number:** 6SL3210-1PE22-7AL0  \n**Title:** SIEMENS 6SL3210-1PE22-7AL0 - Frequency Inverter  \n**Manufacturer:** SIEMENS  \n\n### Product Overview\n\nThe **SIEMENS 6SL3210-1PE22-7AL0** is a member of the **SINAMICS V20** series of frequency inverters. This series is renowned for its reliability in simple drive tasks, ease of use, and rapid commissioning.\n\n#### Key Features:\n\n- **Power Supply:** 3-phase, 380-480V AC\n- **Output Power:** 15 kW (20 HP)\n- **Output Current:** 27 A (nominal)\n- **Integrated Controls:** Basic operator panel for local control, built-in PID controller\n- **Braking:** Integrated braking chopper\n- **Protection:** IP20 enclosure\n- **Communication:** Modbus RTU (RS485), optional communication modules available\n- **Certifications:** CE, UL, cUL, EAC\n\n#### Typical Applications:\n\n- Pumps & Fans\n- Conveyor Belts\n- Machine Tools\n- Simple automation systems\n\n#### Advantages:\n\n- **User-friendly:** Quick set-up, easy commissioning with application macros\n- **Robustness:** Reliable operation even in demanding environments\n- **Compact Size:** Space-saving design\n\n---\n\n**Datasheet/Documentation (Official):**  \n[SIEMENS 6SL3210-1PE22-7AL0 Datasheet (PDF)](https://support.industry.siemens.com/cs/document/109748516/sinamics-v20-catalog?dti=0&lc=en-WW)\n\n**Availability:**  \nTypically in stock at major industrial automation distributors and SIEMENS partners.\n\n**Notes:**  \nIf you need wiring diagrams, start-up guides, or help with compatibility, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "S6230EG1",
+        "title": "Schneider Electric Pelco Camera S6230-EG1",
+        "manufacturer": "SCHNEIDER ELECTRIC"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a product summary for the provided information:\n\n---\n\n**Product:** Schneider Electric Pelco Camera S6230-EG1  \n**Part Number:** S6230EG1  \n**Manufacturer:** Schneider Electric\n\n### Description\nThe **Schneider Electric Pelco S6230-EG1** is a high-performance surveillance camera designed for professional security applications. It typically features advanced imaging, robust construction, and compatibility with various Pelco systems and mounting accessories.\n\n#### Key Features (Typical for Pelco \u201cS\u201d Series, but please verify for specifics):\n- **High-definition imaging** (usually up to 1080p or greater)\n- **Integrated pan/tilt/zoom (PTZ) capabilities**\n- **Outdoor-rated (weatherproof) housing**\n- **Advanced analytics and event detection**\n- **Network connectivity for remote monitoring**\n- **Support for ONVIF and Pelco management protocols**\n\n### Applications\n- Commercial and industrial security\n- Transportation hubs\n- Public safety monitoring\n- Critical infrastructure protection\n\n### Reference Links\n- [Schneider Electric Pelco Official Product Page](https://www.pelco.com/products/cameras/ptz/sarix-professional/)\n\n---\n\n**Note:** For full technical specifications or a datasheet for the S6230-EG1, please consult Schneider Electric/Pelco official documentation or contact a distributor, as details can vary by region or camera variant. If you want a detailed datasheet, let me know!"
+      }
+    }
+  ],
+  "use_case_determination": [
+    {
+      "input": {
+        "part_number": "MSB6",
+        "title": "FESTO Service Unit Combination MSB6 (531030)",
+        "manufacturer": "FESTO"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a summary of the FESTO Service Unit Combination you specified:\n\n---\n\n**Part Number:** MSB6  \n**Title:** FESTO Service Unit Combination MSB6 (531030)  \n**Manufacturer:** FESTO\n\n---\n\n### Product Description\n\nThe FESTO MSB6 (531030) is a modular service unit combination typically used in pneumatic systems for air preparation. It usually integrates several crucial functions such as filtration, regulation, and sometimes lubrication, ensuring optimal performance and longevity of downstream pneumatic devices.\n\n---\n\n### Key Features (General for MSB Series)\n\n- **Integrated Air Preparation:** Often combines filter, regulator, lubricator (FRL), and optionally a soft start/quick exhaust or other modules.\n- **Modular Design:** Easy connection with other MS series components (MS4, MS6, MS9 etc.).\n- **Robust Construction:** Durable materials suitable for industrial settings.\n- **Flexible Mounting:** Wall or panel installation options.\n- **High Flow Rate:** Suitable for medium to high air consumption needs, depending on configuration.\n\n---\n\n### Typical Configuration Includes\n\n- **Filter Regulator:** Removes debris and condensed water, regulates output pressure.\n- **Lubricator (optional):** Adds oil mist to the airflow for lubricating downstream actuators/valves.\n- **Manual/Automatic Drain:** For removing accumulated liquids.\n- **Pressure Gauge:** Visual monitoring of output pressure.\n\n---\n\n### Ordering Information\n\nEach MSB6 configuration may differ depending on the selected modules (filter grade, regulator range, presence of lubricator, etc.).  \nFor the exact configuration corresponding to part number 531030, please consult the [FESTO official datasheet or catalog for MSB6 (531030)](https://www.festo.com/) or contact a FESTO distributor.\n\n---\n\n### Applications\n\n- Industrial automation\n- Food & Beverage industries\n- Packaging machinery\n- General pneumatic systems\n\n---\n\nIf you have further questions (technical specs, compatible accessories, detailed datasheet, etc.), please specify!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "483ESO-327678",
+        "title": "Lenze Voltage Regulator 483ESO / 327678 3x390V",
+        "manufacturer": "LENZE"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a concise product summary for your part:\n\n---\n\n**Lenze Voltage Regulator 483ESO / 327678 (3x390V)**\n\n- **Part Number:** 483ESO-327678  \n- **Manufacturer:** Lenze  \n- **Description:** Voltage Regulator, model 483ESO, part number 327678, designed for 3-phase 390V applications.  \n- **Typical Use:** Industrial automation, motor control, and power regulation requiring reliable voltage management on 3x390V systems.\n\n---\n\nLet me know if you need technical specifications, datasheet links, or further details!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "750-425",
+        "title": "1X Wago 750-425 2DI NAMUR  -  I/O System",
+        "manufacturer": "WAGO"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a structured summary of your product information:\n\n---\n\n**Product Details**\n\n- **Part Number:** 750-425  \n- **Title:** 1X Wago 750-425 2DI NAMUR \u2013 I/O System  \n- **Manufacturer:** WAGO\n\n**Description (Summary):**  \nThe WAGO 750-425 is a 2-channel digital input (DI) module for NAMUR sensors, part of the WAGO I/O System. It is designed for use in automation and process control, and interfaces with NAMUR-type sensors for digital signal acquisition.\n\nIf you need more specifications, datasheets, or compatible modules, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "6SL3203-0BE32-5AA0",
+        "title": "SIEMENS 6SL3203-0BE32-5AA0  -  Sinamics Line Filter",
+        "manufacturer": "SIEMENS"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s some detailed information about the part you provided:\n\n---\n\n**Part Number:** 6SL3203-0BE32-5AA0  \n**Title:** SIEMENS 6SL3203-0BE32-5AA0 \u2013 Sinamics Line Filter  \n**Manufacturer:** Siemens\n\n---\n\n### Description\nThe **SIEMENS 6SL3203-0BE32-5AA0** is a **Sinamics Line Filter**, typically used in industrial automation setups. It is designed to be connected to the input side of a Sinamics drive system to improve the electromagnetic compatibility (EMC) by reducing conducted emissions back to the supply network.\n\n---\n\n### Key Technical Specifications\n\n- **Type:** Line Filter\n- **Application:** For use with Sinamics frequency converters/drives\n- **Phase:** 3-phase\n- **Rated Voltage:** Up to 520 V AC (Check the specific datasheet/manual)\n- **Rated Current:** 25 A\n- **Mounting:** Panel Mount  \n- **IP Rating:** (Typically IP20, verify in datasheet)\n\n---\n\n### Typical Applications\n- Variable speed drive systems\n- Motor and motion control\n- Industrial automation and process lines\n- Applications requiring EMC filtering to comply with standards\n\n---\n\n### Benefits\n- Enhances EMC performance of inverter systems\n- Helps meet international emission standards (e.g., EN 61800-3)\n- Improves operational reliability of drives and connected equipment\n\n---\n\n### Documentation & Resources\n- [SIEMENS SINAMICS Line Filter 6SL3203 Series \u2013 Catalog Page (EN)](https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6SL3203-0BE32-5AA0)\n- [Official Siemens Support Page](https://support.industry.siemens.com/cs/ww/en/ps/6SL3203-0BE32-5AA0)\n- [Datasheet PDF \u2013 If available, typically found on the above links.]\n\n---\n\nIf you need wiring diagrams, dimensional drawings, pricing, selection guidance, or spare parts compatibility, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "RUC130-M30-LIAP8X-H1151",
+        "title": "Turck RUC130-M30-LIAP8X-H1151  -  Ultrasonic Sensor",
+        "manufacturer": "TURCK"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a product overview for the part you requested:\n\n---\n\n**Product:** Turck RUC130-M30-LIAP8X-H1151 \u2013 Ultrasonic Sensor  \n**Manufacturer:** TURCK  \n**Part Number:** RUC130-M30-LIAP8X-H1151\n\n---\n\n### **Features:**\n\n- **Sensing Principle:** Ultrasonic\n- **Detection Range:** Typically adjustable; Turck\u2019s RUC130 series often covers ranges up to 1.3 m or as specified by the datasheet\n- **Output:** Usually analog or switching output (check exact variant)\n- **Design:** M30 cylindrical metal housing\n- **Connection:** M12 connector (commonly used in Turck sensors)\n- **Special Features:**  \n  - Reliable detection of various materials regardless of color, transparency, or surface texture\n  - Immune to dust, dirt, or moisture in the detection zone\n  - Teach-in capability for quick setup and calibration\n\n### **Typical Applications:**\n\n- Object presence detection\n- Level measurement\n- Distance measurement\n- Process automation\n\n### **Similar Models:**\n\n- **RUC130-M30-LIAP8X-H1151** belongs to the RUC130 range, known for robustness and reliability in industrial environments.\n\n### **Manufacturer Links:**\n\n- [Turck RUC130 Series Product Page](https://www.turck.com/) (You can search for the part number for datasheets and manuals.)\n\n### **Datasheet:**\n\nFor detailed specifications such as exact range, supply voltage, output type, and wiring, please refer to the [Turck RUC130-M30-LIAP8X-H1151 Datasheet](https://www.turck.de/media/downloads/ultraschallsensoren_tc_ru130_m30_liap8x_h1151_en.pdf) (link may need searching on the official Turck site).\n\n---\n\n**If you need dimensions, pinout, or wiring details, let me know!**"
+      }
+    },
+    {
+      "input": {
+        "part_number": "140ACO02000C",
+        "title": "Schneider Electric Analogue Output Module 140ACO02000C",
+        "manufacturer": "SCHNEIDER ELECTRIC"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here are the details for the part you provided:\n\n---\n**Part Number:** 140ACO02000C  \n**Title:** Schneider Electric Analogue Output Module 140ACO02000C  \n**Manufacturer:** Schneider Electric\n\n**Product Description:**  \nThe Schneider Electric 140ACO02000C is an **Analogue Output Module** designed for use in Modicon Quantum automation systems.\n\n**Key Features:**\n- **2 channels** of analogue output  \n- **Output Type:** Typically voltage and/or current (commonly 0\u201320 mA, 4\u201320 mA, or 0\u201310 V, please confirm for your application)  \n- **Compatible with:** Modicon Quantum programmable logic controllers (PLCs)  \n- **Mounting:** Rack-mounted in Quantum I/O racks  \n- **Applications:** Industrial automation, process control, SCADA systems, etc.\n\n**Datasheet and Further Info:**  \n- [Schneider Electric Product Page for 140ACO02000C (external link)](https://www.se.com/ww/en/product/140ACO02000C)\n- [Quantum Automation Platform Page (external link)](https://www.se.com/ww/en/product-range/620-quantum/)\n\n**Typical Uses:**  \n- Controlling actuators, valves, variable speed drives and other field devices requiring analogue signals out of the PLC.\n\n---\n\nIf you need technical specifications, wiring diagrams, or information on replacements/alternatives, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "6SL3210-1PE22-7AL0",
+        "title": "SIEMENS 6SL3210-1PE22-7AL0  -  Frequency Inverter",
+        "manufacturer": "SIEMENS"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s some information about your part:\n\n**Part Number:** 6SL3210-1PE22-7AL0  \n**Title:** SIEMENS 6SL3210-1PE22-7AL0 \u2013 Frequency Inverter  \n**Manufacturer:** SIEMENS  \n\n### Product Overview\nThe **SIEMENS 6SL3210-1PE22-7AL0** is part of the **SINAMICS V20** series, which are compact and versatile frequency inverters (variable frequency drives, VFDs) designed for simple motion sequences.\n\n### Key Technical Specifications:\n\n- **Series:** SINAMICS V20\n- **Rated Power:** 15 kW (20 HP)\n- **Input Voltage:** 3-phase 380-480 V AC (\u00b110%)\n- **Output Current:** 27A\n- **Protection Class:** IP20\n- **Frequency Range:** 0-550 Hz\n- **Control Mode:** V/f Control (Voltage/Frequency)\n- **Communication Interface:** USS/Modbus RTU (via optional module)\n- **Applications:** Pumps, fans, conveyors, compressors, and general purpose applications.\n\n### Highlights:\n\n- **Easy to use & install** (quick commissioning, intuitive operation)\n- **Energy efficient** (energy-saving modes)\n- **Robust and reliable** for industrial environments\n\n### Documentation & Resources:\n- [SIEMENS SINAMICS V20 Catalog (PDF)](https://cache.industry.siemens.com/dl/files/644/109746644/att_900626/v1/SINAMICS_V20_Brochure.pdf)\n- [Product support page (siemens.com)](https://support.industry.siemens.com/cs/products/6SL3210-1PE22-7AL0)\n\n**If you need wiring diagrams, user manuals, or help with selecting replacements, please let me know!**"
+      }
+    },
+    {
+      "input": {
+        "part_number": "S6230EG1",
+        "title": "Schneider Electric Pelco Camera S6230-EG1",
+        "manufacturer": "SCHNEIDER ELECTRIC"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here are the details for your product:\n\n---\n\n## Product Details\n\n**Part Number:** S6230EG1  \n**Title:** Schneider Electric Pelco Camera S6230-EG1  \n**Manufacturer:** SCHNEIDER ELECTRIC  \n\n---\n\n### Description\n\nThe **Pelco S6230-EG1** is a camera manufactured by Schneider Electric, commonly used in security and surveillance applications. \"Pelco\" is a renowned brand under Schneider Electric specializing in video security solutions.  \n\n#### Possible Features (model-dependent):\n- High-resolution imaging\n- PTZ (Pan-Tilt-Zoom) functionality\n- Weatherproof and vandal-resistant casing\n- Network/IP connectivity\n- Infrared night vision\n\n---\n\n### Useful Links\n\n- [Pelco by Schneider Electric \u2013 Official Site](https://www.pelco.com/)\n- [S6230-EG1 Datasheet (if available)](https://www.pelco.com/products/sarix-professional-2)\n\n---\n\n### Typical Applications\n\n- Commercial building security  \n- Public area monitoring  \n- Industrial site surveillance  \n- Transportation hubs\n\n---\n\n#### Do you need detailed specifications, documentation, compatibility info, or pricing for this camera? Let me know how I can assist further!"
+      }
+    }
+  ],
+  "industry_classification": [
+    {
+      "input": {
+        "part_number": "MSB6",
+        "title": "FESTO Service Unit Combination MSB6 (531030)",
+        "manufacturer": "FESTO"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here is a product summary based on your details:\n\n---\n\n**Product:** FESTO Service Unit Combination MSB6 (531030)  \n**Part Number:** MSB6  \n**Manufacturer:** FESTO  \n\n**Description:**  \nThe FESTO MSB6 (531030) is a modular service unit combination, commonly used in compressed air preparation systems. It typically integrates filters, regulators, lubricators, and other pneumatic components to ensure optimal air quality, pressure regulation, and lubrication for downstream equipment.\n\n**Key Applications:**  \n- Automation systems  \n- Pneumatic control panels  \n- Industrial machinery\n\n**Manufacturer Link:**  \n[FESTO MSB6 on FESTO.com](https://www.festo.com/)\n\nIf you need technical specifications, datasheets, or compatible accessories, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "483ESO-327678",
+        "title": "Lenze Voltage Regulator 483ESO / 327678 3x390V",
+        "manufacturer": "LENZE"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here is a product listing summary for your part:\n\n---\n\n**Product:** Lenze Voltage Regulator 483ESO / 327678 3x390V  \n**Part Number:** 483ESO-327678  \n**Manufacturer:** LENZE\n\n**Description:**  \nThe Lenze 483ESO / 327678 is a voltage regulator designed for three-phase systems with an input of 3 x 390V. It is commonly used in industrial automation and drive systems to ensure stable voltage levels and protection for sensitive equipment.\n\n**Key Features:**\n- Input Voltage: 3 x 390V  \n- Model: 483ESO  \n- Manufacturer Part Number: 327678  \n- High reliability and robust construction  \n- Used for precise voltage regulation in Lenze drive applications  \n\n**Typical Applications:**  \n- Industrial automation  \n- Motor drive systems  \n- Factory equipment requiring consistent voltage  \n\n---\n\nIf you need specifications, wiring diagrams, pricing, or compatibility information, just let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "750-425",
+        "title": "1X Wago 750-425 2DI NAMUR  -  I/O System",
+        "manufacturer": "WAGO"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here are the details for your item:\n\n---\n\n**Part Number:** 750-425  \n**Title:** 1X Wago 750-425 2DI NAMUR - I/O System  \n**Manufacturer:** WAGO  \n\n---\n\n### Product Description\n\n- **750-425** is a digital input module from WAGO's 750 series I/O system.\n- **2DI NAMUR** indicates it provides **2 digital inputs suitable for NAMUR sensors** (widely used for intrinsic safety in process automation).\n- Fits into WAGO\u2019s modular automation systems, typically used for industrial control and monitoring applications.\n\n---\n\n### Key Specifications\n\n- **Number of Inputs:** 2 (suitable for NAMUR sensors/contacts)\n- **Module Type:** Digital Input\n- **I/O System:** WAGO 750 Series\n- **Typical Use:** Integrating NAMUR-type sensors into automation systems\n\n---\n\n### Resources\n\n- [Datasheet - WAGO 750-425 (PDF)](https://www.wago.com/us/interface-electronics/digital-input-module/p/750-425)  \n- [WAGO 750-425 Product Website](https://www.wago.com/us/io-systems/digital-input-module/p/750-425)\n\nLet me know if you need ordering information, pricing, wiring diagrams, or application examples!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "6SL3203-0BE32-5AA0",
+        "title": "SIEMENS 6SL3203-0BE32-5AA0  -  Sinamics Line Filter",
+        "manufacturer": "SIEMENS"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here is some detailed information for the part you specified:\n\n---\n\n**Part Number:** 6SL3203-0BE32-5AA0  \n**Title:** SIEMENS 6SL3203-0BE32-5AA0 \u2013 SINAMICS Line Filter  \n**Manufacturer:** SIEMENS\n\n### Product Overview\n\nThe **SIEMENS 6SL3203-0BE32-5AA0** is a line filter designed for use with the Siemens SINAMICS family of variable frequency drives (VFDs). Line filters are used to suppress electromagnetic interference (EMI) and improve the electromagnetic compatibility (EMC) of the drive system.\n\n---\n\n### Key Specifications\n\n- **Function:** Sine-wave filter (Line filter for SINAMICS drives)\n- **Rated Voltage:** 3 AC 380...480 V\n- **Rated Current:** Typically 25 A (Check datasheet for exact value)\n- **Frequency:** 50/60 Hz\n- **Compatibility:** SINAMICS drive systems, typically G120 and others\n- **Mounting:** Panel mounting\n\n---\n\n### Typical Applications\n\n- Industrial automation panels\n- Variable frequency drive installations\n- Applications requiring compliance to EMC standards\n\n---\n\n### Main Features\n\n- Reduces conducted emissions and harmonics generated by VFDs\n- Enhances operational reliability by protecting sensitive equipment\n- Contributes to regulatory compliance (EMC/EMI)\n- Compact and easy to integrate into control cabinets\n\n---\n\n### Resources\n\n- [Siemens Product Details - 6SL3203-0BE32-5AA0 (Official Site)](https://mall.industry.siemens.com/mall/en/WW/Catalog/Product/6SL3203-0BE32-5AA0)\n- [Catalog and Documentation for SINAMICS Line Components (PDF)](https://support.industry.siemens.com/cs/attachments/77681415/Line_Filters_and_Chokes_en.pdf)\n\n---\n\nIf you need dimensions, wiring diagrams, or pricing/sourcing information, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "RUC130-M30-LIAP8X-H1151",
+        "title": "Turck RUC130-M30-LIAP8X-H1151  -  Ultrasonic Sensor",
+        "manufacturer": "TURCK"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s a brief product overview for the part you specified:\n\n---\n\n**Turck RUC130-M30-LIAP8X-H1151 - Ultrasonic Sensor**\n\n- **Part Number:** RUC130-M30-LIAP8X-H1151  \n- **Manufacturer:** TURCK  \n- **Product Type:** Ultrasonic Sensor\n\n**Description:**  \nThe Turck RUC130-M30-LIAP8X-H1151 is a robust ultrasonic sensor engineered for precise distance measurement and object detection tasks, often used in industrial automation. These sensors operate using ultrasonic waves to detect objects regardless of color, transparency, or surface finish.\n\n**Main Features:**\n- **Housing:** M30 Threaded cylindrical body\n- **Operating Principle:** Ultrasonic (proximity/distance measurement)\n- **Output:** Generally features analog and/or digital output (please refer to datasheet for exact configuration)\n- **Sensing Range:** *Varies, typically up to several meters (see datasheet or product manual for specifics)*\n- **Electrical Connection:** Often features an 8-pin connector (based on \"P8\" in the code)  \n- **Protection:** Rugged construction for industrial environments  \n\n**Typical Applications:**\n- Level detection even with transparent liquids\n- Object presence or absence detection\n- Distance measurement on fast-moving conveyors\n\n**Product Resources:**  \n- [Turck Product Finder: RUC130-M30-LIAP8X-H1151](https://www.turck.com/)\n- [Direct Product Datasheet (if available)](https://pdb2.turck.de/en/DE/products/000000530000c22800010023)\n\nIf you need technical specifications like exact sensing range, supply voltage, wiring diagram, or pinout, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "140ACO02000C",
+        "title": "Schneider Electric Analogue Output Module 140ACO02000C",
+        "manufacturer": "SCHNEIDER ELECTRIC"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s some detailed information about the part you provided:\n\n---\n\n### Part Number\n**140ACO02000C**\n\n### Title\n**Schneider Electric Analogue Output Module 140ACO02000C**\n\n### Manufacturer\n**Schneider Electric**\n\n---\n\n## Product Overview\n\n**The Schneider Electric 140ACO02000C** is an analogue output module designed for use in Modicon Quantum PLC (Programmable Logic Controller) systems. It provides high-quality, precise analogue outputs for industrial automation and process control.\n\n### Key Features\n\n- **Number of Channels:** 2 Analogue Outputs\n- **Output Type:** Current (typically 4\u201320 mA)\n- **Resolution:** 12-bit\n- **Isolation:** Channels are isolated from the logic and each other.\n- **Form Factor:** Quantum series slot-type I/O module\n- **Connection:** Standard Quantum backplane, removable terminal block or field wiring module\n- **Diagnostics:** Status LEDs for channel and module status\n- **Common Usage:** Control of analog actuators, valves, VFDs, and data acquisition in process automation.\n\n### Typical Applications\n\n- Industrial automation\n- Process control (oil & gas, water treatment, etc.)\n- Manufacturing systems\n- Building management\n\n### Documentation & Resources\n\n- **Datasheet:** [Download here (external)](https://www.se.com/ww/en/product/140ACO02000C/quantum-analog-output-module-2-ch-4-%20to-20-ma/)\n- **User Manual:** [Quantum Series I/O Manual (external)](https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=33002668_K01000_000_02.pdf)\n- **Selection Guide:** Available from the Schneider Electric official website.\n\n---\n\nIf you need information such as wiring diagrams, compatible accessories, pricing, or stock availability, let me know!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "6SL3210-1PE22-7AL0",
+        "title": "SIEMENS 6SL3210-1PE22-7AL0  -  Frequency Inverter",
+        "manufacturer": "SIEMENS"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here is some key information about the product you provided:\n\n---\n\n**Part Number:** 6SL3210-1PE22-7AL0  \n**Title:** SIEMENS 6SL3210-1PE22-7AL0 \u2013 Frequency Inverter  \n**Manufacturer:** SIEMENS  \n\n---\n\n### Product Description:\nThe **SIEMENS 6SL3210-1PE22-7AL0** is a frequency inverter, part of the **SINAMICS V20** family. Frequency inverters are used to control the speed and torque of three-phase AC motors efficiently and are commonly found in applications such as pumps, fans, conveyors, and compressors.\n\n---\n\n### Key Specifications:\n\n| Parameter                   | Value                                       |\n|-----------------------------|---------------------------------------------|\n| **Series**                  | SINAMICS V20                                |\n| **Rated Power**             | 15 kW (20 HP)                               |\n| **Input Voltage**           | 3-phase, 380-480V AC                        |\n| **Output Current**          | 27 A                                        |\n| **Control Method**          | V/F, FCC (Flux Current Control)             |\n| **Enclosure Rating**        | IP20                                        |\n| **Frequency Range**         | 0 \u2013 550 Hz                                  |\n| **Dimensions (WxHxD)**      | Approx. 220 x 295 x 170 mm                  |\n| **Integrated Functions**    | Simple parameterization, I/O, Modbus RTU    |\n\n---\n\n### Typical Applications:\n\n- Fans & pumps\n- Conveyor systems\n- Compressors\n- General machinery requiring speed control\n\n---\n\n### Documentation & Downloads:\n\n- **[SIEMENS Official Datasheet for 6SL3210-1PE22-7AL0 (PDF)](https://support.industry.siemens.com/cs/document/109746802/sinamics-v20-inverter-short-catalog?dti=0&lc=en-DE)**\n- **[User Manual](https://cache.industry.siemens.com/dl/files/750/109746750/att_1091038/v1/SINAMICS-V20_Inverter_UserManual_en-US_en-US.pdf)**\n\n---\n\nIf you need details such as wiring diagrams, configuration assistance, or spare part compatibility, please specify!"
+      }
+    },
+    {
+      "input": {
+        "part_number": "S6230EG1",
+        "title": "Schneider Electric Pelco Camera S6230-EG1",
+        "manufacturer": "SCHNEIDER ELECTRIC"
+      },
+      "expected": {},
+      "actual": {
+        "result": "Here\u2019s some key information about the **Schneider Electric Pelco Camera S6230-EG1**:\n\n---\n\n### **Product Overview**\n- **Part Number:** S6230EG1\n- **Product Name:** Schneider Electric Pelco Camera S6230-EG1\n- **Manufacturer:** Schneider Electric (Pelco)\n\n---\n\n### **Product Features**\n- **Type:** Surveillance Security Camera (usually part of Pelco\u2019s Spectra PTZ series)\n- **Form Factor:** Outdoor PTZ (Pan-Tilt-Zoom) Dome Camera\n- **Key Specs:**\n  - **Resolution:** Typically 2MP (1080p) or higher (Exact model specs should be checked)\n  - **Zoom:** Likely features a 30x optical zoom (common in S6230 series)\n  - **Environment:** Outdoor-rated, often with weather resistance (IP66/67)\n  - **Enhanced Imaging:** Low-light performance, wide dynamic range, True Day/Night functionality\n  - **Network:** Network (IP) camera\n  - **Power:** PoE (Power over Ethernet) or 24V AC\n\n---\n\n### **Typical Datasheet Features**  \n*Below are features as typically found in this model/series (confirm with official datasheet for exact match):*\n- **Streaming:** Multi-stream H.264 & MJPEG\n- **Analytics:** Built-in video analytics\n- **Alarms:** Multiple input/output for alarms and triggers\n- **SD Card Slot:** Local edge recording\n- **Operating Temperature:** Adapted for wide temperature ranges\n\n---\n\n### **Links for More Information**\n- **[Official Pelco (by Schneider Electric) S6230-EG1 Product Page](https://www.pelco.com/products/video-security-cameras/ptz-cameras/spectra-enhanced-ptz/s6230e)**\n- [Pelco S6230EG1 PDF Datasheet (example)](https://media.pelco.com/documents/Spectra-Enhanced-Pan-Tilt-Zoom-Outdoor-Camera-Datasheet_en.pdf)\n\n---\n\n### **Typical Applications**\n- City surveillance\n- Transportation (airports, stations)\n- Critical infrastructure\n- Commercial buildings\n\n---\n\n**If you need a full datasheet or exact technical specifications, let me know!**"
+      }
+    }
+  ],
+  "summary": {
+    "feature_count": 8,
+    "use_case_count": 8,
+    "industry_count": 8,
+    "company_count": "skipped",
+    "new_company_count": "skipped",
+    "timestamp": "2025-05-26T00:05:26.897308",
+    "total_cost_usd": 0.2632
+  }
+}
