@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Path setup (project root: .../parts2sales-llm-hub)
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 STATIC_DIR = BASE_DIR / "static"
 TEMPLATE_DIR = BASE_DIR / "templates"
 EVAL_DIR = BASE_DIR / "evals"
@@ -32,12 +32,19 @@ COST_FILE = EVAL_DIR / "token_costs_summary.json"
 # FastAPI app instance
 app = FastAPI()
 
-# Mount static files and templates
-app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
-templates = Jinja2Templates(directory=TEMPLATE_DIR)
+# Mount static files (only if available)
+# Mount static files (only if available)
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+else:
+    logger.warning(f"⚠️ Static directory not found: {STATIC_DIR}")
 
-# Register upload routes
-app.include_router(upload_router)
+# Mount templates (only if available)
+if TEMPLATE_DIR.exists():
+    templates = Jinja2Templates(directory=TEMPLATE_DIR)
+else:
+    logger.warning(f"⚠️ Template directory not found: {TEMPLATE_DIR}")
+    templates = Jinja2Templates(directory=".")
 
 
 @app.get("/", response_class=HTMLResponse)
