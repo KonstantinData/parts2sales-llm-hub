@@ -18,24 +18,6 @@ dependencies = [
     "language-tool-python>=2.9.3",
 ]
 
-[tool.rye]
-dev-dependencies = [
-    "black>=25.1.0",
-    "pre-commit>=4.2.0"
-]
-
 [tool.setuptools]
 packages = ["parts2sales_llm_hub"]
 package-dir = {"" = "src"}
-
-[tool.rye.dependencies]
-pydantic = "==2.10.6"
-pydantic-core = "==2.27.2"
-notebook = ">=7.3.2"
-jupyterlab = ">=4.3.4,<4.4"
-
-[tool.rye.scripts]
-validate-templates = "python -m prompt_quality.cli.validate_templates_batch"
-
-
-
