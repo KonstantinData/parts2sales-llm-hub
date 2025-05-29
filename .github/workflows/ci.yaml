@@ -25,16 +25,16 @@ jobs:
           ~/.rye/shims/rye config --set-bool behavior.use-uv=true
 
       - name: 🚀 Install dependencies
-        run: rye sync
+        run: ~/.rye/shims/rye sync
 
       - name: 🔧 Lint code (optional, enable if using ruff/black)
         run: |
           echo "No linter configured yet"
-          # rye run ruff .
-          # rye run black --check .
+          # ~/.rye/shims/rye run ruff .
+          # ~/.rye/shims/rye run black --check .
 
       - name: ✅ Run tests
-        run: rye run pytest tests/
+        run: ~/.rye/shims/rye run pytest tests/
 
       - name: 📊 Upload test results (optional)
         if: always()
