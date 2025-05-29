@@ -17,12 +17,14 @@ jobs:
       - name: ⚙ Install Rye (CI safe mode)
         env:
           CI: "1"
-          RYE_INSTALLER_NO_TTY: "1"
         run: |
-          curl -sSf https://rye.astral.sh/get | bash -s -- --yes --no-prompt
+          mkdir -p $HOME/.rye
+          curl -fsSL https://github.com/astral-sh/rye/releases/latest/download/rye-x86_64-unknown-linux-gnu -o $HOME/.rye/rye
+          chmod +x $HOME/.rye/rye
+          ln -sf $HOME/.rye/rye $HOME/.rye/shims/rye
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
           echo "$HOME/.rye/bin" >> $GITHUB_PATH
-          ~/.rye/shims/rye config --set-bool behavior.use-uv=true
+          $HOME/.rye/shims/rye config --set-bool behavior.use-uv=true
 
       - name: 🚀 Install dependencies
         run: ~/.rye/shims/rye sync
