@@ -12,13 +12,10 @@ jobs:
         uses: actions/checkout@v4
       - name: ⚙ Install Rye
         run: |
-          # Download the installer script first
-          curl -sSf https://rye.astral.sh/get -o install-rye.sh
-          chmod +x install-rye.sh
-
-          # Execute the installer script with -y for non-interactive mode.
-          # Also set common CI environment variables to ensure non-interactive behavior.
-          DEBIAN_FRONTEND=noninteractive CI=true ./install-rye.sh -y
+          # Explicitly set stdin to /dev/null to prevent any terminal interaction.
+          # Also include DEBIAN_FRONTEND and CI flags for good measure.
+          # The -y flag is passed to the script to accept defaults.
+          env DEBIAN_FRONTEND=noninteractive CI=true bash -c "curl -sSf https://rye.astral.sh/get | bash -s -- -y" < /dev/null
 
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
           echo "$HOME/.rye/bin" >> $GITHUB_PATH
