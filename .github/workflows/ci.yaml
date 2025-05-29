@@ -16,10 +16,10 @@ jobs:
 
       - name: ⚙ Install Rye
         run: |
-        curl -sSf https://rye.astral.sh/get | bash
-        echo "$HOME/.rye/shims" >> $GITHUB_PATH
-        echo "$HOME/.rye/bin" >> $GITHUB_PATH
-        ~/.rye/shims/rye config --set-bool behavior.use-uv=true
+          curl -sSf https://rye.astral.sh/get | bash
+          echo "$HOME/.rye/shims" >> $GITHUB_PATH
+          echo "$HOME/.rye/bin" >> $GITHUB_PATH
+          ~/.rye/shims/rye config --set-bool behavior.use-uv=true
 
       - name: 🚀 Install dependencies
         run: ~/.rye/shims/rye sync
