@@ -1,60 +1,54 @@
 name: CI
-
 on:
   push:
     branches: [main, dev]
   pull_request:
     branches: [main, dev]
-
 jobs:
   build-and-test:
     runs-on: ubuntu-22.04
-
     steps:
       - name: ✨ Checkout code
         uses: actions/checkout@v4
-
-      - name: ⚙ Install Rye (python bootstrap)
+      - name: ⚙ Install Rye
         run: |
-          python3 -c "import urllib.request; exec(urllib.request.urlopen('https://rye.astral.sh/get.py').read())"
+          # The key to fixing "not a terminal" when piping to bash for rustup/rye
+          # is often to pass the -s -- -y flags to bash.
+          # -s tells bash to read commands from standard input.
+          # -- separates options for bash from arguments to the script being run (the one from curl).
+          # -y tells the script (rye installer) to proceed with defaults without prompts.
+          curl -sSf https://rye.astral.sh/get | bash -s -- -y
+
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
           echo "$HOME/.rye/bin" >> $GITHUB_PATH
           ~/.rye/shims/rye config --set-bool behavior.use-uv=true
-
       - name: 🚀 Install dependencies
         run: ~/.rye/shims/rye sync
-
       - name: 🔧 Lint code (optional, enable if using ruff/black)
         run: |
           echo "No linter configured yet"
           # ~/.rye/shims/rye run ruff .
           # ~/.rye/shims/rye run black --check .
-
       - name: ✅ Run tests
         run: ~/.rye/shims/rye run pytest tests/
-
       - name: 📊 Upload test results (optional)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: tests/workflow/
-
   docker-deploy:
     needs: build-and-test
     runs-on: ubuntu-22.04
     if: github.ref == 'refs/heads/main'
-
     steps:
       - name: 📃 Checkout code
         uses: actions/checkout@v4
-
       - name: 🔐 Configure AWS credentials via OIDC
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.AWS_ROLE_NAME }}
           aws-region: us-east-1
-
       - name: 🚀 Build, tag, and push Docker image to ECR
         env:
           ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
