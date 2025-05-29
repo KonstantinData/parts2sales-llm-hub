@@ -122,9 +122,6 @@ python-json-logger==3.2.1
 python-slugify==8.0.4
 pytimeparse==1.1.8
 pytz==2024.2
-pywin32==308
-pywin32-ctypes==0.2.3
-pywinpty==2.0.14
 PyYAML==6.0.2
 pyzmq==26.2.0
 referencing==0.36.1
