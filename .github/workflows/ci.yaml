@@ -14,13 +14,14 @@ jobs:
       - name: ✨ Checkout code
         uses: actions/checkout@v4
 
-      - name: ⚙ Install Rye (CI safe mode)
+      - name: ⚙ Install Rye (manual CI install)
         env:
           CI: "1"
         run: |
+          sudo apt-get update && sudo apt-get install -y gzip
           mkdir -p $HOME/.rye/shims
-          curl -fsSL https://github.com/astral-sh/rye/releases/latest/download/rye-x86_64-unknown-linux-gnu.zip -o $HOME/.rye/rye.zip
-          unzip -o $HOME/.rye/rye.zip -d $HOME/.rye/
+          curl -fsSL https://github.com/astral-sh/rye/releases/latest/download/rye-x86_64-linux.gz -o $HOME/.rye/rye.gz
+          gunzip -f $HOME/.rye/rye.gz
           chmod +x $HOME/.rye/rye
           ln -sf $HOME/.rye/rye $HOME/.rye/shims/rye
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
