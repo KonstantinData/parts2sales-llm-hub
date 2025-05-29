@@ -14,9 +14,9 @@ jobs:
       - name: ✨ Checkout code
         uses: actions/checkout@v4
 
-      - name: ⚙ Install Rye
+      - name: ⚙ Install Rye (python bootstrap)
         run: |
-          curl -sSf https://rye.astral.sh/get | bash
+          python3 -c "import urllib.request; exec(urllib.request.urlopen('https://rye.astral.sh/get.py').read())"
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
           echo "$HOME/.rye/bin" >> $GITHUB_PATH
           ~/.rye/shims/rye config --set-bool behavior.use-uv=true
