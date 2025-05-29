@@ -1,58 +1,32 @@
-name: CI
+name: CLI
+
 on:
   push:
     branches: [main, dev]
   pull_request:
     branches: [main, dev]
+
 jobs:
-  build-and-test:
+  validate-templates-cli:
     runs-on: ubuntu-22.04
+
     steps:
       - name: ✨ Checkout code
         uses: actions/checkout@v4
-      - name: ⚙ Install Rye
-        run: |
-          # Explicitly set stdin to /dev/null to prevent any terminal interaction.
-          # Also include DEBIAN_FRONTEND and CI flags for good measure.
-          # The -y flag is passed to the script to accept defaults.
-          env DEBIAN_FRONTEND=noninteractive CI=true bash -c "curl -sSf https://rye.astral.sh/get | bash -s -- -y" < /dev/null
 
-          echo "$HOME/.rye/shims" >> $GITHUB_PATH
-          echo "$HOME/.rye/bin" >> $GITHUB_PATH
-          ~/.rye/shims/rye config --set-bool behavior.use-uv=true
-      - name: 🚀 Install dependencies
-        run: ~/.rye/shims/rye sync
-      - name: 🔧 Lint code (optional, enable if using ruff/black)
-        run: |
-          echo "No linter configured yet"
-          # ~/.rye/shims/rye run ruff .
-          # ~/.rye/shims/rye run black --check .
-      - name: ✅ Run tests
-        run: ~/.rye/shims/rye run pytest tests/
-      - name: 📊 Upload test results (optional)
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          name: test-results
-          path: tests/workflow/
-  docker-deploy:
-    needs: build-and-test
-    runs-on: ubuntu-22.04
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: 📃 Checkout code
-        uses: actions/checkout@v4
-      - name: 🔐 Configure AWS credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.AWS_ROLE_NAME }}
-          aws-region: us-east-1
-      - name: 🚀 Build, tag, and push Docker image to ECR
-        env:
-          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+          python-version: "3.12.6"   # Passe ggf. an deine gewünschte Python-Version an
+
+      - name: Install dependencies
         run: |
-          COMMIT_TAG=$(echo ${GITHUB_SHA::7})
-          docker build -t $ECR_REPOSITORY:$COMMIT_TAG .
-          docker tag $ECR_REPOSITORY:$COMMIT_TAG $ECR_REPOSITORY:latest
-          docker push $ECR_REPOSITORY:$COMMIT_TAG
-          docker push $ECR_REPOSITORY:latest
+          python -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run CLI validate-templates
+        run: |
+          source venv/bin/activate
+          python -m prompt_quality.cli.validate_templates_batch
