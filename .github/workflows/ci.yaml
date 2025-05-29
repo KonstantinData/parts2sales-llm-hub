@@ -18,8 +18,9 @@ jobs:
         env:
           CI: "1"
         run: |
-          mkdir -p $HOME/.rye
-          curl -fsSL https://github.com/astral-sh/rye/releases/latest/download/rye-x86_64-unknown-linux-gnu -o $HOME/.rye/rye
+          mkdir -p $HOME/.rye/shims
+          curl -fsSL https://github.com/astral-sh/rye/releases/latest/download/rye-x86_64-unknown-linux-gnu.zip -o $HOME/.rye/rye.zip
+          unzip -o $HOME/.rye/rye.zip -d $HOME/.rye/
           chmod +x $HOME/.rye/rye
           ln -sf $HOME/.rye/rye $HOME/.rye/shims/rye
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
