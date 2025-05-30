@@ -1,19 +1,10 @@
 # lang_en.py
 
-# ------------------------------------------
-
 # Purpose:
 # Define idiomatic, structural, lexical, and tonal patterns for English prompts
-
-# Goals:
-# - Enable automated linguistic validation and quality scoring
-
-# Use Cases:
-# - Used by prompt validation tools for English prompt checking
+# and return not only boolean checks but also matched patterns for diagnostics
 
 
-# English idiomatic expressions for natural phrasing
-# -------------------------------------------------
 def idiomatic_expressions():
     return [
         "hit the ground running",
@@ -23,62 +14,47 @@ def idiomatic_expressions():
     ]
 
 
-# Action verbs indicating clarity of instruction
-# ---------------------------------------------
 def action_keywords():
     return ["analyze", "create", "generate", "identify", "derive"]
 
 
-# Words indicating logical structure
-# ----------------------------------
 def structure_keywords():
     return ["first", "then", "next", "finally", "in conclusion"]
 
 
-# Phrases that should be avoided due to awkwardness
-# --------------------------------------------------
 def lexical_warnings():
     return ["analyze of", "do a derivation"]
 
 
-# Tone-inappropriate words or phrases
-# -----------------------------------
 def tone_blacklist():
     return ["whatever", "damn", "wtf"]
 
 
-# Check for use of actionable phrasing
-# ------------------------------------
 def is_actionable(text):
-    return any(word in text.lower() for word in action_keywords())
+    found = [w for w in action_keywords() if w in text.lower()]
+    return bool(found), found
 
 
-# Detect structured flow using structural markers
-# ------------------------------------------------
 def has_structure(text):
-    return sum(1 for word in structure_keywords() if word in text.lower()) >= 2
+    found = [w for w in structure_keywords() if w in text.lower()]
+    return len(found) >= 2, found
 
 
-# Check for presence of idiomatic English phrasing
-# -------------------------------------------------
 def has_idiom(text):
-    return any(phrase in text for phrase in idiomatic_expressions())
+    found = [p for p in idiomatic_expressions() if p in text]
+    return bool(found), found
 
 
-# Check for known incorrect lexical patterns
-# ------------------------------------------
 def violates_lexical_rules(text):
-    return any(combo in text for combo in lexical_warnings())
+    matches = [combo for combo in lexical_warnings() if combo in text]
+    return len(matches) == 0, matches
 
 
-# Detect tonal violations (informal, unprofessional)
-# --------------------------------------------------
 def has_tone_issue(text):
-    return any(term in text.lower() for term in tone_blacklist())
+    found = [term for term in tone_blacklist() if term in text.lower()]
+    return len(found) == 0, found
 
 
-# Explanation map for validation result keys
-# ------------------------------------------
 def explanations():
     return {
         "grammar_check": "Fix grammar issues for clearer understanding.",
