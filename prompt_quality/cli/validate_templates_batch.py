@@ -1,10 +1,7 @@
-# validate_templates_batch.py
-
 import os
 import yaml
 from prompt_quality.cli.validate_prompt_quality_cli import (
     validate_prompt,
-    detect_language,
     log_results,
 )
 
@@ -29,7 +26,7 @@ def run_template_validation():
                     print(f"⚠️ No 'prompt' could be constructed in {filename}")
                     continue
 
-                language = detect_language(prompt)
+                language = "en"  # Statt detect_language()
                 results, explanation_map = validate_prompt(prompt, language)
                 log_results(prompt, language, results, explanation_map, show_score=True)
 
